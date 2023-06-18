@@ -1,0 +1,2 @@
+class Historia():
+    pass
