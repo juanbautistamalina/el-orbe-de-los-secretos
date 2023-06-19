@@ -2,6 +2,7 @@ from Menu import *
 from Inicializacion import *
 from Personaje import *
 from Historia import *
+from Comandos import *
 
 
 # Esta es la clase Main, en la que se va a llamar a todas las demás clases

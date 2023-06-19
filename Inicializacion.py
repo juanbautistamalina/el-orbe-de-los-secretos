@@ -1,5 +1,7 @@
-from Personaje import Personaje
-from Comandos import Comandos
+from Personaje import *
+from Comandos import *
+from Historia import * 
+
 
 class Inicializacion():
     
@@ -10,7 +12,11 @@ class Inicializacion():
         jugador.crear_personaje() # Inicializo las propiedades del jugador (Nombre, Nivel, Vida, Ataque)
         jugador.mostrar_informacion()
         
-        Comandos.esperar_tecla()
+        Comandos.esperar_tecla(True)
         
+        # Mostrando la Historia Introductoria
+        historia = Historia()
+        historia.introduccion(jugador.get_nombre())
         
-        # Historia introductoria
+        # Inicia el Capítulo 1
+        Comandos.iniciar_cap1()

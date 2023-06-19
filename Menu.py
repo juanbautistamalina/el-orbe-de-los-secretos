@@ -1,7 +1,15 @@
 # Importo del archivo Inicialización.py la clase Inicializacion
 from Inicializacion import *
 
-
+"""
+    Esta es la clase Menu: En esta clase, hay métodos estáticos que imprimen por pantalla el menú visual del juego. 
+    Todo por consola. 
+    
+    1) El método mostrar_menu muestra la pantalla inicial del juego
+    2) El método seleccion_menu permite al jugador elegir entre las opciones del menú y a partir de allí empezar a jugar
+    3) El método frase_bienvenida muestra una frase de bienvenida al jugador, al seleccionar la opción de -> 1. Jugar
+    """
+    
 class Menu():
     
     # Este menú será visual en un futuro:

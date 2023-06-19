@@ -1,3 +1,13 @@
+
+"""
+    Esta es la clase Personaje: En esta clase se inicializan las propiedades comunes de los personajes 
+    de la cual, van a heredar las clases Jugador y Enemigo. 
+    
+    1) El método crear_personaje permite que el usuario introduzca su nombre de usuario y lo corrija en caso de desearlo.
+    Además le da por defecto el nivel = 1, vida = 100, ataque = 20
+    
+    2) El método mostrar_información le muestra por consola al usuario los siguientes datos: Nombre, Nivel, Vida y Ataque.
+"""
 class Personaje(): 
     
     def __init__(self, nombre, nivel, vida, ataque):
@@ -47,3 +57,5 @@ class Personaje():
         print("────────────────────────────────────────────────────────────────────────────────────────────────")
         
     
+    def get_nombre(self):
+        return self.nombre
