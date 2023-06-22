@@ -1,10 +1,25 @@
-from Comandos import *
-from Personaje import Personaje
+#from Comandos import *
+#from Personaje import *
+
+"""
+        Clase Historia: En esta clase hay 3 métodos
+        
+        - introduccion(nombre): Este método muestra un texto introductorio a modo de contexto para el jugador. Requiere
+        que se le pase por parámetros el nombre del jugador, y para ello hago uso del método get_nombre que se encuentra
+        en la clase Personaje y que me retorna el nombre del jugador. 
+        
+        - get_titulo(numero): Este método etorna un texto personalizado con el nombre del capítulo dependiendo 
+        del número que se le pase por parámetros. 
+        
+        - cap_1(): Este método es estático, dado que sólo contiene variables que almacenan largas cadenas de texto, 
+        las cuales se le van a mostrar al usuario por consola para ir detallando lo que va ocurriendo en el juego.
+
+"""
+
+
 class Historia():
         
         def introduccion(self, nombre): 
-        
-                nombre_jugador = nombre
         
                 print("Hace siglos, en un reino lejano, existía un imperio próspero y en paz.")
                 print("Sin embargo, una antigua profecía advirtió sobre una oscuridad que amenazaba con destruirlo todo.")
@@ -18,7 +33,7 @@ class Historia():
                 print()
                 print("En este oscuro contexto, aparece nuestro valiente protagonista.")
                 print("Eres un guerrero de noble corazón, dotado de habilidades excepcionales y una determinación inquebrantable.")
-                print(f"Tu nombre es {nombre_jugador}, y has sido elegido para llevar a cabo una misión épica.")
+                print(f"Tu nombre es {nombre}, y has sido elegido para llevar a cabo una misión épica.")
                 print()
                 print("Tu objetivo es recolectar los cinco orbes dispersos por el reino, cada uno oculto en un lugar peligroso")
                 print("y custodiado por criaturas malignas y desafiantes.")
@@ -37,11 +52,11 @@ class Historia():
                 print("Tu destino como héroe o villano está por definirse.")
                 print("Prepárate para sumergirte en una aventura épica llena de intriga, desafío y descubrimientos asombrosos.") 
                 print("En 'El Orbe de los Secretos', tu valor y tus decisiones forjarán el futuro del reino.")
-                print(f"¡Que la fortuna te acompañe, valiente {nombre_jugador}!")
+                print(f"¡Que la fortuna te acompañe, valiente {nombre}!")
                 print("────────────────────────────────────────────────────────────────────────────────────────────────")
 
 
-
+        @staticmethod
         def get_titulo(numero):
         
                 if numero == 1: 

@@ -1,12 +1,17 @@
 
 """
-    Esta es la clase Personaje: En esta clase se inicializan las propiedades comunes de los personajes 
+    Clase Personaje: En esta clase se inicializan las propiedades comunes de los personajes 
     de la cual, van a heredar las clases Jugador y Enemigo. 
     
-    1) El método crear_personaje permite que el usuario introduzca su nombre de usuario y lo corrija en caso de desearlo.
-    Además le da por defecto el nivel = 1, vida = 100, ataque = 20
+    - crear_personaje(): Este método ermite que el usuario introduzca su nombre de usuario y lo corrija 
+    en caso de desearlo. Además le da por defecto el nivel = 1, vida = 100, ataque = 20
     
-    2) El método mostrar_información le muestra por consola al usuario los siguientes datos: Nombre, Nivel, Vida y Ataque.
+    - mostrar_información(): Este método le muestra por consola al usuario los siguientes datos: 
+    Nombre, Nivel, Vida y Ataque.
+    
+    - get_nombre(): Este método retorna el nombre del usuario (Se utiliza principalmente para el método introducción
+    de la clase Historia)
+    
 """
 class Personaje(): 
     
@@ -38,7 +43,8 @@ class Personaje():
                 self.ataque = 20
                 
                 return Personaje(self.nombre, self.nivel, self.vida, self.ataque) 
-                break  # Sale del bucle si la confirmación es 's' (sí)
+                
+                # Sale del bucle si la confirmación es 's' (sí)
         
             elif confirmacion.lower() == "n" or confirmacion.lower() == "no":
                 print("Entendido, puedes editar el nombre de tu personaje.")

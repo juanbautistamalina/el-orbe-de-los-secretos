@@ -1,2 +1,4 @@
+"""
 class Combate():
     pass
+    """

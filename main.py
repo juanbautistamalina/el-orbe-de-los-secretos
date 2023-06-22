@@ -5,12 +5,17 @@ from Historia import *
 from Comandos import *
 
 
-# Esta es la clase Main, en la que se va a llamar a todas las demás clases
+# Esta es la clase Main, en la que se va a llamar a todas las demás clases. Acá se ejecuta el juego
 
-"""
-    1) Menú: Muestra el menú del juego y le permite al usuario seleccionar entre 4 opciones
-    (Jugar, Instrucciones, Créditos y Salir). Dependiendo de cada opción, se mostrará un texto u otro. 
-    Si se elige la opción Jugar, se procederá a mostrar primero un mensaje de bienvenida y posteriormente
+def main():
     
-"""
-Menu.seleccion_menu()
+    # Mostrar el menú y manejar las opciones
+    Menu.seleccion_menu()
+    
+    
+    
+    
+
+# Ejecución del Juego
+if __name__ == '__main__':
+    main()

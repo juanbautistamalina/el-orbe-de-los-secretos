@@ -1,3 +1,4 @@
+"""
 import time
 
 class HealthBar:
@@ -35,3 +36,4 @@ enemy_health.update(20)
 
 player_health.display()
 enemy_health.display()
+"""
